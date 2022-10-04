@@ -1,14 +1,15 @@
 import React from 'react';
 import RecipeCard from './RecipeCard';
+import { v4 as uuidv4 } from 'uuid';
 
-const RecipeList = ({ recipeData }) => {
+const RecipeList = ({ recipeData , itemsToShow}) => {
 
-const renderRecipes = recipeData.map(recipe => {
-  const recipeId = recipe.recipe.ingredients.map(ing => ing.foodId);
-  return(
-    <RecipeCard key={recipeId} recipeDetails={recipe}/>
-  )
-})
+  const renderRecipes = recipeData.slice(0, itemsToShow).map(recipe => {
+    return(
+      <RecipeCard key={uuidv4()} recipeDetails={recipe}/>
+      
+    )
+  })
 
   return (
     <div className="recipe-list">

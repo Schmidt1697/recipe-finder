@@ -8,7 +8,6 @@ import Recipes from './components/Recipes';
 import Favorites from './components/Favorites';
 import FullRecipe from './components/FullRecipe';
 
-
 function App() {
 
   return (

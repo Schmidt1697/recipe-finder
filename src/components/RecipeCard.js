@@ -1,7 +1,6 @@
 import React from 'react'
 
 const RecipeCard = ({ recipeDetails }) => {
-  console.log(recipeDetails)
 
   return (
     <div className="recipe-card">

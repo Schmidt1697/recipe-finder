@@ -7,26 +7,30 @@ const Recipes = () => {
   const [recipeData, setRecipeData] = useState([]);
   const [searchSubmit, setSearchSubmit] = useState('chocolate');
 
-  
+  const API_KEY = process.env.REACT_APP_API_KEY;
+  const API_ID = process.env.REACT_APP_API_ID;
+
+  const [itemsToShow, setItemsToShow] = useState(4);
 
   // GET recipe data
   useEffect(() => {
-    fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=${searchSubmit}&app_id=${API_ID}&app_key=${API_KEY}`)
+    fetch(`/v2?type=public&q=${searchSubmit}&app_id=${API_ID}&app_key=${API_KEY}`)
     .then(res => res.json())
     .then(data => {
-        // console.log(data.hits)
-        setRecipeData(data.hits.slice(0,5)) 
+        console.log(data)
+        // display "x" recipes, change slice argument to show more or less
+        setRecipeData(data.hits)
     })
     .then(console.error)
 
   },[searchSubmit])
 
-
   return (
     <div className='recipes'>
       Recipes
       <Search setSearchSubmit={setSearchSubmit}/>
-      <RecipeList recipeData={recipeData}/>
+      <RecipeList recipeData={recipeData} itemsToShow={itemsToShow}/>
+      <button className="show-more-button" onClick={() => setItemsToShow(itemsToShow + 4)}>Show More Recipes</button>
     </div>
   )
 }

@@ -6,6 +6,7 @@ const Search = ({setSearchSubmit}) => {
   function handleSubmit(e) {
     e.preventDefault();
     setSearchSubmit(search);
+    setSearch("");
   }
 
   return (
@@ -19,7 +20,6 @@ const Search = ({setSearchSubmit}) => {
         onChange={(e) => setSearch(e.target.value)}
       />
       <button type="submit">🔍</button>
-
     </form>
   )
 }
