@@ -1,3 +1,8 @@
+Endless Eats is an app created by Flatiron School students: Anna Schmidt, Chris Ding, and Cindy Qu for their Phase 2 project. 
+This project allows a user to search a large recipe API and save favorite recipes.
+The API used is the free-version from edamam.com, and only allows 10 requests/min. 
+Favorite recipes are saved and accessed from a separate heroku db.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
