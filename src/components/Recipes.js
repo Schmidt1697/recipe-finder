@@ -19,7 +19,7 @@ const Recipes = () => {
     .then(data => {
       if (data.message === "Usage limits are exceeded") {
         alert('Too many requests! Please wait a minute and try again.')
-        throw new Error('Too many requests! Please wait a minute and try again.')
+        throw new Error('Too many requests! Please try again in a minute.')
       }
       setNextRecipes(data["_links"].next.href);
       setRecipeData(data.hits) 

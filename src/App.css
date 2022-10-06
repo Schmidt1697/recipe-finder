@@ -79,11 +79,6 @@ button:hover{
  
 }
 
-.nav a:active{
-  text-decoration: underline 2px solid var(--main-salmon);
-}
-
-
 /*------- HOME ------- */
 .home{
   height: 100vh;
