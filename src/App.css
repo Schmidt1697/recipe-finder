@@ -79,11 +79,6 @@ button:hover{
  
 }
 
-.nav a:active{
-  text-decoration: underline 2px solid var(--main-salmon);
-}
-
-
 /*------- HOME ------- */
 .home{
   height: 100vh;
@@ -267,6 +262,7 @@ button:hover{
   border-radius: 4px;
   margin: 15px 0px;
   width: 30vw;
+  max-width: 400px;
 }
 
 .ingredient-list{
