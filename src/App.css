@@ -55,7 +55,7 @@ button:hover{
 	backdrop-filter: blur(5px);
   position: fixed;
   z-index: 2;
-  max-width: 1600px;
+  max-width: 1500px;
   
  
 }
@@ -85,7 +85,7 @@ button:hover{
   width: 100vw;
   padding: none;
   margin: none;
-  max-width: 1600px;
+  max-width: 1500px;
   max-height: 1200px;  
   background-image: url("./images/meal-mariana-medvedeva-unsplash.jpg");
   background-position: top -200px right 0px; 
@@ -114,7 +114,6 @@ button:hover{
 .home-info p{
   margin: 0 auto 25px auto;
   width: 20vw;
- 
 }
 
 /*-------- SEARCH --------*/
@@ -132,8 +131,7 @@ button:hover{
   overflow-y: scroll;
   padding: 50px 0;
   margin: 0 auto;
-  max-width: 1600px;
-
+  max-width: 1500px;
 }
 
 .searchbar input, .submit-btn{
@@ -143,8 +141,7 @@ button:hover{
 .searchbar label{
   padding: 5px;
   background-color: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(5px);
-  
+  backdrop-filter: blur(5px); 
 }
 
 .searchbar input{
@@ -153,7 +150,6 @@ button:hover{
   width: 180px;
   border: 2px solid var(--main-dkBlue);
   border-radius: 4px;
-
 }
 
 .submit-btn{
@@ -176,7 +172,6 @@ button:hover{
 
 .recipes h1{
   padding: 80px 0 0 0;
-  
 }
 
 .recipe-list {
@@ -207,7 +202,6 @@ button:hover{
   height: 180px;
   border-radius: 4px;
   margin: 10px 0;
-  
 }
 
 .recipe-btn{
@@ -242,7 +236,6 @@ button:hover{
   height: 100vh;
   width: 100vw;
   max-width: 1600px;
-    
 }
 
 .full-recipe-card{
@@ -268,7 +261,6 @@ button:hover{
 .ingredient-list{
   list-style-type: none;
   padding: 10px;
-  
 }
 
 .full-recipe button{
